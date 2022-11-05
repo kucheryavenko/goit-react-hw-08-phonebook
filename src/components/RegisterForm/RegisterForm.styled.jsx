@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   width: 340px;
+  margin: 0 auto;
 `;
 
 export const Label = styled.label`
@@ -15,6 +16,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
+  width: 340px;
   padding: ${p => p.theme.space[1]}px ${p => p.theme.space[2]}px;
   font-weight: 400;
 
