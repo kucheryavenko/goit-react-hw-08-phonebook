@@ -10,8 +10,12 @@ import { Section } from 'components/Section';
 import { Title } from 'components/Title';
 import { Notification } from 'components/Notification';
 import { Loader } from 'components/Loader';
-import { selectContacts, selectIsLoading, selectError } from 'redux/selectors';
-import { fetchContacts } from 'redux/operations';
+import {
+  selectContacts,
+  selectIsLoading,
+  selectError,
+} from 'redux/contacts/selectors';
+import { fetchContacts } from 'redux/contacts/operations';
 
 // const Contacts = () => {
 //   return <div>Component - Contacts</div>;
