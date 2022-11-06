@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[38],{38:function(e,t,n){n.r(t);var r=n(184);t.default=function(){return(0,r.jsx)("div",{children:"Component - Login Form"})}}}]);
-//# sourceMappingURL=38.0e6dd8b2.chunk.js.map
