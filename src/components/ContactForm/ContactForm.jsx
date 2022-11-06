@@ -14,7 +14,7 @@ import {
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
-  const [phone, setNumber] = useState('');
+  const [number, setNumber] = useState('');
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 
@@ -36,20 +36,21 @@ export const ContactForm = () => {
   const handleSubmit = evt => {
     evt.preventDefault();
 
-    if (checkDublicate({ name, phone })) {
+    if (checkDublicate({ name, number })) {
       toast.error(`${name} is already in contacts. Please add a new contact.`);
       return;
     }
 
-    dispatch(addContact({ name, phone }));
+    dispatch(addContact({ name, number }));
     reset();
   };
 
-  const checkDublicate = ({ name, phone }) => {
+  const checkDublicate = ({ name, number }) => {
     const normalizedName = name.toLowerCase();
     const result = contacts.find(
       contact =>
-        contact.name.toLowerCase() === normalizedName && contact.phone === phone
+        contact.name.toLowerCase() === normalizedName &&
+        contact.phone === number
     );
 
     return result;
@@ -79,7 +80,7 @@ export const ContactForm = () => {
         id={numberId}
         type="tel"
         name="number"
-        value={phone}
+        value={number}
         pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
         title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
         placeholder="742-987-4457"

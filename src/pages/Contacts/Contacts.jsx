@@ -17,17 +17,11 @@ import {
 } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
 
-// const Contacts = () => {
-//   return <div>Component - Contacts</div>;
-// };
-
-// export default Contacts;
-
 const Contacts = () => {
+  const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
-  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchContacts());
