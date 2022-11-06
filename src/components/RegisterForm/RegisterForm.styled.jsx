@@ -5,6 +5,14 @@ export const Form = styled.form`
   margin: 0 auto;
 `;
 
+export const Title = styled.h2`
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 24px;
+`;
+
 export const Label = styled.label`
   display: flex;
   flex-direction: column;

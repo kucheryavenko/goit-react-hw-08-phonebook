@@ -1,8 +1,9 @@
-import { Form, Label, Input, Button } from './RegisterForm.styled';
+import { Form, Title, Label, Input, Button } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
   return (
     <Form>
+      <Title>Register to Contact Manager</Title>
       <Label>
         Name
         <Input type="text" name="name" />
