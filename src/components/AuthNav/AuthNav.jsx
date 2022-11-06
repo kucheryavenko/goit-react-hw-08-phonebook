@@ -4,7 +4,7 @@ export const AuthNav = () => {
   return (
     <div>
       <Link to="/register">Register</Link>
-      <Link to="/login">Login</Link>
+      <Link to="/login">Log in</Link>
     </div>
   );
 };

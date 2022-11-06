@@ -6,7 +6,7 @@ export const RegisterForm = () => {
       <Title>Register to Contact Manager</Title>
       <Label>
         Name
-        <Input type="text" name="name" />
+        <Input type="text" name="name" autoFocus />
       </Label>
       <Label>
         Email
