@@ -12,8 +12,8 @@ import {
   selectContacts,
   selectIsLoading,
   selectError,
-} from 'redux/contacts/selectors';
-import { fetchContacts } from 'redux/contacts/operations';
+} from 'redux/contacts/contactsSelectors';
+import { fetchContacts } from 'redux/contacts/contactsOperations';
 
 const Contacts = () => {
   const dispatch = useDispatch();
