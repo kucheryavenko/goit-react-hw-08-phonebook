@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Container } from './Contacts.styled';
 import { ContactForm } from 'components/ContactForm';
 import { ContactList } from 'components/ContactList';
@@ -39,7 +37,6 @@ const Contacts = () => {
           <Notification message="You don't have contacts yet..." />
         )}
       </Section>
-      <ToastContainer autoClose={5000} />
     </Container>
   );
 };
