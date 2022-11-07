@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Form = styled.form`
   width: 340px;
@@ -21,10 +22,12 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   height: 30px;
+  margin-top: 4px;
 `;
 
 export const Button = styled.button`
   width: 340px;
+  margin-bottom: 20px;
   padding: ${p => p.theme.space[1]}px ${p => p.theme.space[2]}px;
   font-weight: 400;
 
@@ -39,4 +42,16 @@ export const Button = styled.button`
     background-color: ${p => p.theme.colors.hover};
     box-shadow: ${p => p.theme.shadows.shadow};
   }
+`;
+
+export const Txt = styled.p`
+  font-size: 16 px;
+  text-align: center;
+  color: ${p => p.theme.colors.primaryAccent};
+`;
+
+export const Link = styled(NavLink)`
+  display: inline-block;
+  text-decoration: none;
+  color: ${p => p.theme.colors.hover};
 `;

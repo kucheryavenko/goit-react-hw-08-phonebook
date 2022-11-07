@@ -1,7 +1,15 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/authOperations';
-import { Form, Title, Label, Input, Button } from './LoginForm.styled';
+import {
+  Form,
+  Title,
+  Label,
+  Input,
+  Button,
+  Txt,
+  Link,
+} from './LoginForm.styled';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -53,6 +61,9 @@ export const LoginForm = () => {
         />
       </Label>
       <Button type="submit">Login</Button>
+      <Txt>
+        New user? <Link to="/register">Create an account</Link>.
+      </Txt>
     </Form>
   );
 };

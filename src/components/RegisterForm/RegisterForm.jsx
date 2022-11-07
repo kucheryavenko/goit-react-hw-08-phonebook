@@ -1,7 +1,15 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/authOperations';
-import { Form, Title, Label, Input, Button } from './RegisterForm.styled';
+import {
+  Form,
+  Title,
+  Label,
+  Input,
+  Button,
+  Txt,
+  Link,
+} from './RegisterForm.styled';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -66,6 +74,9 @@ export const RegisterForm = () => {
         />
       </Label>
       <Button type="submit">Register</Button>
+      <Txt>
+        Already have an account? <Link to="/login">Log in</Link>.
+      </Txt>
     </Form>
   );
 };
