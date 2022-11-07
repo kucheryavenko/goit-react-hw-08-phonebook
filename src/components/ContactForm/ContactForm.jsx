@@ -50,7 +50,7 @@ export const ContactForm = () => {
     const result = contacts.find(
       contact =>
         contact.name.toLowerCase() === normalizedName &&
-        contact.phone === number
+        contact.number === number
     );
 
     return result;
